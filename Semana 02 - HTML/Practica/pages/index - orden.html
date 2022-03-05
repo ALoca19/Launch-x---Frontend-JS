@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition layout-fixed">
+
+
+  <table align="center" WIDTH="80%">
+
+		<tr align="center">
+			<th >Menu</th>
+			<th >Prepara tu Orden</th>
+      <th >Danos tus datitos</th>
+		</tr>
+
+    <tr>
+			<td>
+        
+        <ul>
+            <li>Sabores
+                <ul>
+                    <li>Tres Leches.... 150</li>
+                    <li>Chocolate...... 120</li>
+                    <li>Cafe........... 130</li>
+                    <li>Coco........... 160</li>
+                    <li>Moka........... 125</li>
+                    <li>Vainilla....... 100</li>
+                    <li>Oreo........... 100</li>
+                </ul>
+            </li>
+
+            <li>Adornos
+              <ul>
+                  <li>Flor de fondant........... 20</li>
+                  <li>Personaje de Fondant...... 120</li>
+                  <li>Moño...................... 35</li>
+                  <li>Mariposa de fondant....... 45</li>
+              </ul>
+          </li>
+        </ul>
+
+      </td>
+
+			<td>
+
+        <form method=post name="formulario1">
+
+          <p>De que sabores sera:</p>
+          <input type ="checkbox" id="chocolate" name="chocolate" value="chocolate">
+          <label for="chocolate">Chocolate</label>
+          <br>
+          <input type ="checkbox" id="cafe" name="cafe" value="cafe">
+          <label for="cafe">Cafe</label>
+          <br>
+          <input type ="checkbox" id="coco" name="coco" value="coco">
+          <label for="coco">Coco</label>
+          <br>
+          <input type ="checkbox" id="moke" name="moke" value="moke">
+          <label for="moke">Moka</label>
+          <br>
+          <input type ="checkbox" id="vainilla" name="vainilla" value="vainilla">
+          <label for="vainilla">Vainilla</label>
+          <br>
+          <input type ="checkbox" id="oreo" name="oreo" value="oreo">
+          <label for="oreo">Oreo</label>
+          <br>
+
+
+          <p>¿Adornos?</p>
+          <input type ="checkbox" id="flor" name="flor" value="flor">
+          <label for="flor">Flor</label>
+          <input type ="number" id="numFlor" name="numFlor" placeholder="0"  min="0" max="10" size="10">
+          <br>
+          <input type ="checkbox" id="personaje" name="personaje" value="personaje">
+          <label for="personaje">Personaje</label>
+          <input type ="number" id="numPersonaje" name="numPersonaje" placeholder="0" min="0" max="10" size="10">
+          <br>
+          <input type ="checkbox" id="mono" name="mono" value="mono">
+          <label for="mono">Moño</label>
+          <input type ="number" id="numMono" name="numMono" placeholder="0" min="0" max="10" size="10">
+          <br>
+          <input type ="checkbox" id="mariposa" name="mariposa" value="mariposa">
+          <label for="mariposa">Mariposa</label>
+          <input type ="number" id="numMariposa" name="numMariposa" placeholder="0" min="0" max="10" size="10">
+        </form>
+      
+       </td>
+
+       <td>
+        <form method=post name="formulario2">
+          <label for="Nombre">Nombre: </label>
+          <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+          <br>
+          <label for="telefono">Telefono: </label>
+          <input type="tel" id="telefono" name="telefono" placeholder="492-xxx-xxxx">
+          <br>
+          <label for="correo">Correo Electronico: </label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com">
+          <br>
+          <label for="mesa">Descripcion del pedido: </label><br>
+          <textarea rows="4" cols="35" id="desc"></textarea>
+            
+          <br>
+          
+       </form>
+      </td>
+		</tr>
+
+    <tr height="25px"><td></td><td></td><td></td></tr>
+
+    
+
+	</table>
+
+
+  
+<div align="center">
+  <a href="../index.html">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-Evidencias">Inicio</button> </a> 
+| <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-actualizar" onclick="ordenCliente();">Ordenar</button>
+</div>
+   
+
+<div class="modal fade" id="modal-actualizar">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <label><p>Tu Orden ah sido enviada</p></label>
+        <p>Nos comunicaremos en cuanto sea posible</p>
+      </div>
+      <div class="modal-footer" style="text-align: right;">
+        <a href="../index.html">
+          <button type="button" class="btn btn-primary" data-toggle="modal">Inicio</button> </a> 
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+
+<!-- Scripts propios -->
+
+<script src="../js/orden.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.apartado01 {
+    background-color: #bb13a1;
+    display: flex;
+    justify-content: center;
+}
+
+.apartado02 {
+    background-color: blueviolet;
+}
+
+.apartado03 {
+    background-color: #f11bff;
+}
+
+.apartado04 {
+    background-color: #03b7fa;
+    display: flex;
+    justify-content: center;
+}
