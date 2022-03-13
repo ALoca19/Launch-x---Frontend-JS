@@ -1,0 +1,51 @@
+* {
+    margin:0;
+    padding:0;
+    }
+ 
+.columna1 {
+    position: absolute;
+    padding: 10px; 
+    float: left; 
+    width: 45%; 
+    text-align: justify;
+   }
+   
+.columna2 {
+   margin-left:50%;
+   margin-right:20px;
+   margin-top:10px;
+   background-color:#2124f0;
+   }
+
+.flotante
+{
+ margin-top:30px;
+ width: 100%;
+ text-align: center;
+
+}
+
+.flotante .A, .flotante .B, .flotante .C, .flotante .D
+{  /*padre*/
+	display: inline-block;
+}
+
+.titlefloat
+{
+    margin-top:15px; 
+}
+
+.columna15
+{
+    
+left:0px;
+width:200px;
+margin-top:10px;
+background-color:#ffff55;
+}
+
+.sec3
+{
+    margin: auto;
+}
