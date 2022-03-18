@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Pokedex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="../CSS/style.css" rel="stylesheet">
+        <link href="../CSS/pokedex.css" rel="stylesheet">
+        
+    </head>
+    <body >
+        <div class="pokedex">
+            <div class="info-display center">
+                <form name="pokemonKeySend" method="POST" action="">
+                    <input type="text" id="pokemonId" name="pokemonId" class="id-display" value="" onKeyUp="pokemonKeyId()"/>
+                </form>
+                <div class="name-display">
+                    <b id="name-display"></b>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="pokemon-display">
+                <div class="pokemon">
+                    <img id="imgPokemon" src="" width="100%" height="100%">
+                </div>
+                <div class="pokemon type">
+                    <span id="pokemonType"></span>
+                </div>
+            </div>
+            <br>
+
+            <div class="pokemon-display">
+                <div class="pokemon">
+                    <b id="habilitad"></b>
+                    <b id="movimiento"></b>
+                    <b id="tipos"></b>
+                </div>
+            </div>
+
+            <br>
+            <div class="buttons">
+                <div class="button" onClick="window.location='../index.html'"> Regresar </div>
+            </div>
+        </div>
+        <script src="../JS/llenarPokedex.js"></script>
+
+    </body>
+</html>

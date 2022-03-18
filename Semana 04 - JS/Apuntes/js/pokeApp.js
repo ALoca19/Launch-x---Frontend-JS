@@ -31,7 +31,7 @@ function pokeImagen(url){
 
 function imprimir(){
     const pokeName = document.getElementById("pokeName");
-    let pokeInput = pokeName.value.toLowerCase();
+    let pokeInput = pokeName.value.toLowerCase(); //tolowcase para poner todo en minuscula
     console.log("mensaje");
     fetchPokemon(pokeInput);
 }
